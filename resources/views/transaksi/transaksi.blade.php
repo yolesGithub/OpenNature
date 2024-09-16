@@ -55,7 +55,7 @@
             margin-bottom: -2px;
         }
         .container {
-            width: 40%;
+            width: 65%;
             margin: 25px auto;
         }
         .grid {

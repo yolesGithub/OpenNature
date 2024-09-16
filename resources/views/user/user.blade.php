@@ -50,7 +50,7 @@
             margin-top: -4px;
         }
         table {
-            width: 30%; /* Increase width a bit for better layout */
+            width: 40%; /* Increase width a bit for better layout */
             margin: 20px auto;
             background-color: #fff;
             border-collapse: separate; /* Allow border-radius on table */

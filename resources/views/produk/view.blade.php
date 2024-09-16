@@ -45,7 +45,7 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+            grid-template-columns: repeat(4, 1fr); /* Default 4 columns */
             gap: 40px;
         }
         .product-card {
@@ -110,6 +110,19 @@
             height: 28px;
             margin-top: -4px;
         }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 1200px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on medium-sized screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -139,11 +152,7 @@
                         <div class="name">{{ $pl->{'plant-name'} }}</div> <!-- Leftmost plant name -->
                         <div class="price">{{ $pl->{'plant-price'} }}</div> <!-- Price next to button -->
                         <img id=coin-icon src="{{ asset('/icon/coin.jpg') }}" alt="coin">
-                        <button class="buy-btn">
-                            Beli
-                            
-                        </button> <!-- Rightmost buy button -->
-
+                        <button class="buy-btn">Beli</button> <!-- Rightmost buy button -->
                     </div>
                 </div>
             @endforeach
