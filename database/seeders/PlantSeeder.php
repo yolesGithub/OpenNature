@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Plants;
+use App\Models\Plant;
 
 class PlantSeeder extends Seeder
 {
@@ -138,7 +138,7 @@ class PlantSeeder extends Seeder
         \DB::beginTransaction();
         try {
             foreach ($plantData as $data) {
-                plants::create($data);
+                Plant::create($data);
             }
             \DB::commit();
         } catch (\Exception $e) {

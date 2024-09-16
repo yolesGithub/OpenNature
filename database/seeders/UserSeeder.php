@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\users;
+use App\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
         \DB::beginTransaction();
         try {
             foreach ($userData as $data) {
-                users::create($data);
+                User::create($data);
             }
             \DB::commit();
         } catch (\Exception $e) {

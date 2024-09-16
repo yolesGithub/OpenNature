@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\transactions;
+use App\Models\Transaction;
 
 class TransactionSeeder extends Seeder
 {
@@ -24,7 +24,7 @@ class TransactionSeeder extends Seeder
         \DB::beginTransaction();
         try {
             foreach ($transactionData as $data) {
-                transactions::create($data);
+                Transaction::create($data);
             }
             \DB::commit();
         } catch (\Exception $e) {
