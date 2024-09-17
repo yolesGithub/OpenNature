@@ -33,6 +33,9 @@
             margin-right: 20px;
             font-size: 18px;
         }
+        .menu a:hover {
+            color: #ffdd57;
+        }
         .user-logo {
             width: 35px;
             height: 35px;
@@ -55,7 +58,7 @@
             margin-bottom: -2px;
         }
         .container {
-            width: 65%;
+            width: 60%;
             margin: 25px auto;
         }
         .grid {
@@ -99,6 +102,24 @@
             text-align: center;
             color: #333;
             margin-bottom: -5px;
+        }
+        @media (max-width: 1200px) {
+            .header {
+                padding: 20px; /* Tambahkan padding agar header terlihat lebih besar */
+            }
+            .menu a {
+                font-size: 22px; /* Perbesar ukuran font menu */
+            }
+
+            .logo-and-menu {
+                margin-left: 15px; /* Sesuaikan margin */
+                margin-right: 20px;
+            }
+
+            .user-logo, #brand-icon, #user-icon {
+                width: 45px; /* Perbesar logo */
+                height: auto;
+            }
         }        
     </style>
 </head>
@@ -127,6 +148,7 @@
                 <div class="product-card">
                     <img src="{{ asset('img/' . $tr->plant->{'plant-image'}) }}" alt="Plant Image">
                     <div class="info">
+                        <p>Transaction ID: {{ $tr->{'transaction-id'} }}</p>
                         <p>Plant Name: {{ $tr->plant->{'plant-name'} }}</p>
                         <p>
                             Plant Price: {{ $tr->plant->{'plant-price'} }}

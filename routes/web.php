@@ -22,4 +22,4 @@ Route::get('/user', [UserController::class, 'view'])->name('user.view');
 
 Route::get('/transaction', [TransactionController::class, 'view'])->name('transaksi.view');
 
-Route::post('/transaction', [TransactionController::class, 'store'])->name('transaksi');
+Route::post('/transaction', [TransactionController::class, 'store'])->name('transaksi.store');

@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('transactions', function (Blueprint $table) {
-            $table->char('transaction-id', length: 12)->nullable(false);
-            $table->char('user-id-fk', length: 10)->nullable(false);
-            $table->char('plant-id-fk', length: 10)->nullable(false);
+            $table->integer('transaction-id')->nullable(false);
+            $table->integer('user-id-fk')->nullable(false);
+            $table->integer('plant-id-fk')->nullable(false);
             $table->dateTime('transaction-date')->nullable(false);
             $table->unique('transaction-id');
             $table->primary('transaction-id');

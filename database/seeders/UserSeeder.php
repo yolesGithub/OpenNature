@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     {
         $userData = [
             [
-                'user-id' => '0000000001',
+                'user-id' => '1',
                 'user-name' => 'Developer-Mode',
                 'user-password' => 'admin9595',
                 'user-email' => 'devmode@gmail.com',

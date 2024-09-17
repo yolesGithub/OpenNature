@@ -15,9 +15,9 @@ class TransactionSeeder extends Seeder
     {
         $transactionData = [
             [
-                'transaction-id' => '0000000001',
-                'user-id-fk' => '0000000001',
-                'plant-id-fk' => '0000000001',
+                'transaction-id' => '1',
+                'user-id-fk' => '1',
+                'plant-id-fk' => '1',
                 'transaction-date' => '2024-09-13 06:53:37',
             ],
         ];

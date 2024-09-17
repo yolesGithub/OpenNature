@@ -33,6 +33,9 @@
             margin-right: 20px;
             font-size: 18px;
         }
+        .menu a:hover {
+            color: #ffdd57;
+        }
         .user-logo {
             width: 35px;
             height: 35px;
@@ -50,7 +53,7 @@
             margin-top: -4px;
         }
         table {
-            width: 40%; /* Increase width a bit for better layout */
+            width: 35%; /* Increase width a bit for better layout */
             margin: 20px auto;
             background-color: #fff;
             border-collapse: separate; /* Allow border-radius on table */
@@ -82,6 +85,24 @@
         h2 {
             text-align: center;
             color: #333;
+        }
+        @media (max-width: 1200px) {
+            .header {
+                padding: 20px; /* Tambahkan padding agar header terlihat lebih besar */
+            }
+            .menu a {
+                font-size: 22px; /* Perbesar ukuran font menu */
+            }
+
+            .logo-and-menu {
+                margin-left: 15px; /* Sesuaikan margin */
+                margin-right: 20px;
+            }
+
+            .user-logo, #brand-icon, #user-icon {
+                width: 45px; /* Perbesar logo */
+                height: auto;
+            }
         }
     </style>
 </head>
