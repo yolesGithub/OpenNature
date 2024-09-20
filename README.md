@@ -17,13 +17,13 @@
 0. Pastikan di laptop bisa menjalankan perintah `php -v` dan `composer` secara global di cmd windows.
 1. Gunakan perintah `git clone https://github.com/randiPalguna/OpenNature.git` untuk mengcopy proyek kedalam direktori laptop.
 2. Masuk ke direktori projek OpenNature dengan `cd OpenNature`.
-3. Lakukan update composer di dalam direktori OpenNature dengan perintah `composer update`.
+3. Lakukan update composer di dalam direktori OpenNature dengan perintah `composer update` dan tunggu sampai selesai.
 4. Ubah nama file .env.example menjadi .env dengan perintah `ren .env.example .env` jika menggunakan cmd windows atau `mv .env.example .env` jika menggunakan linux.
    Catatan: Pengubahan nama file juga bisa dilakukan secara manual pada file explorer windows.
 5. Generate key pada file .env dengan perintah `php artisan key:generate`.
 6. Sekarang buka aplikasi XAMPP dan hidupkan `apache` dan `mysql`. Pastikan tidak ada error atau berwarna hijau.
 7. Selanjutnya membuat session table pada projek direktori OpenNature dengan perintah `php artisan session:table`.
-8. Selanjutnya melakukan migrate database dengan perintah `php artisan migrate`.
+8. Selanjutnya melakukan migrate database dengan perintah `php artisan migrate` dan ketik `yes` ketika dimintai keterangan.
 9. Selanjutnya melakukan penambahan data pada database dengan perintah `php artisan db:seed`.
 10. Akhirnya jalankan projek OpenNature dengan perintah `php artisan serve`.
 11. Buka browser dan masuk ke localhost projek dengan search `http://localhost:8000/`.
